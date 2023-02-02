@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+img, svg{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+:root{
+    --clr-primary-900: hsl(193, 38%, 86%);
+    --clr-primary-400:hsl(150, 100%, 66%);
+
+    --clr-neutral-900: hsl(217, 19%, 38%);
+    --clr-neutral-500: hsl(217, 19%, 24%);
+    --clr-neutral-400: hsl(218, 23%, 16%);
+
+    --primary-font: 'Manrope', sans-serif;
+    --ff-header: var(--primary-font);
+    --ff-body: var(--primary-font);
+
+    --fw-bold: 800;
+    --fw-normal: 400;
+
+}
+
+body{
+    font-family: var(--ff-body);
+    background-color: var(--clr-neutral-400);
+    color: var(--clr-primary-900);
+}
+
+
+/* UTILITY */
+
+.container{
+    margin-inline: auto;
+    max-width: 1440px;
+    width: 100%;
+    padding: 2em;
+    height: 100%;
+    position: relative;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* @media(min-width: 40em){
+    .container{
+        padding: 2em;
+    }
+} */
+
+
+.card{
+    min-width: 21.875em;
+    background-color: var(--clr-neutral-500);
+    padding: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: .6em;
+    box-shadow: rgba(17, 17, 26, 0.6) 0px 8px 24px, rgba(17, 17, 26, 0.7) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.btn{
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2em;
+    border: none;
+    background: var(--clr-primary-400);
+    transition: .4s;
+}
+
+.btn:hover{
+    background-color: hsl(140, 100%, 75%);
+    box-shadow: hsla(140, 100%, 75%, .6) 0px -5px 40px 4px;
+}
+
+h6{
+    color: var(--clr-primary-400);
+    font-size: 1rem;
+}
+
+.quote{
+    margin-block: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.pattern{
+    margin-bottom: 2em;
+}
+
